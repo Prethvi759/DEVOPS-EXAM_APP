@@ -4,13 +4,13 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "kastrov/devopsexamapp:latest"
+        DOCKER_IMAGE = "prethvi/devopsexamapp:latest"
     }
 
     stages {
         stage('Git Checkout') {
             steps {
-                git url: 'https://github.com/KastroVKiran/devops-exam-app.git', 
+                git url: 'https://github.com/prethvi789/devops-exam-app.git', 
                     branch: 'master'
             }
         }
@@ -98,7 +98,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "kastrov/devopsexamapp:latest"
+        DOCKER_IMAGE = "prethvi/devopsexamapp:latest"
     }
 
     stages {
